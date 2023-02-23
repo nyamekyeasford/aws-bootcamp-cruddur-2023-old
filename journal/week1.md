@@ -10,3 +10,10 @@ But all along the reason was just right before me.
 
 Gitpod is the recommended Code Space used for the Project however i was using githubs default codespace.
 Changed my CodeSPace to GitPod and it resolved my Bug!
+
+So the Crudder Home frontend and Backend code is running successfully 
+from the container images.
+
+Successfully all ports are open and working fine as well
+
+![cruddur homepage](https://user-images.githubusercontent.com/31855784/220991810-2e395d5c-f138-4fce-b783-a6a539be1e8b.png)
