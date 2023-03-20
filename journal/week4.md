@@ -9,6 +9,8 @@
 7. Created a bash script for creating tables and connecting the databases too using the schema load file
 connected lambda to an existing vpc and create rules for connection
 
+Im experiencing a Python module error when i very email and i may have to look into and pay attention to that error
+
 ![Screenshot 2023-03-16 235252](https://user-images.githubusercontent.com/31855784/226289938-4f5a6438-9899-471f-9aec-71f61572f19e.png)
 
 ![Screenshot 2023-03-17 000426](https://user-images.githubusercontent.com/31855784/226289946-582d132e-5f1a-432c-a186-0c8cb7bb8cc5.png)
