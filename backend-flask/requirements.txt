@@ -7,14 +7,14 @@ opentelemetry-exporter-otlp-proto-http
 opentelemetry-instrumentation-flask 
 opentelemetry-instrumentation-requests
 
-#aws-xray-sdk
+aws-xray-sdk
 
-#watchtower
+watchtower
 
-#blinker
-#rollbar
+blinker
+rollbar
 
-#psycopg[binary]
-#psycopg[pool]
+psycopg[binary]
+psycopg[pool]
 
-#boto3
+boto3
