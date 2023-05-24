@@ -11,7 +11,7 @@ aws-xray-sdk
 
 watchtower
 
-#blinker
+blinker
 rollbar
 
 #psycopg[binary]
