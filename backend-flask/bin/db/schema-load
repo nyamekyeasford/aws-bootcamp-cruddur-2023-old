@@ -4,9 +4,9 @@ CYAN='\033[1;36m'
 NO_COLOR='\033[0m'
 LABEL="db-schema-load"
 printf "${CYAN}== ${LABEL}${NO_COLOR}\n"
-echo "==db-schema-load"
+echo "db-schema-load"
 
-schema_path=$(realpath .)/db/schema.sql
+schema_path=$(realpath ..)/backend-flask/db/schema.sql
 echo $schema_path
 
 if [ "$1" = "prod" ]; then
