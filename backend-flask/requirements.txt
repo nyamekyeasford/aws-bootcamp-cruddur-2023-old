@@ -14,7 +14,9 @@ watchtower
 blinker
 rollbar
 
-#psycopg[binary]
-#psycopg[pool]
+Flask-AWSCognito
+
+psycopg[binary]
+psycopg[pool]
 
 #boto3
