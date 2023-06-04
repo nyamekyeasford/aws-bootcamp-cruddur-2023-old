@@ -15,7 +15,7 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
-#from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
+from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
 
 # HoneyComb ---------
 from opentelemetry import trace
@@ -70,11 +70,11 @@ tracer = trace.get_tracer(__name__)
 
 app = Flask(__name__)
 
-#cognito_jwt_token = CognitoJwtToken(
-#  user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"), 
-#  user_pool_client_id=os.getenv("AWS_COGNITO_USER_POOL_CLIENT_ID"),
-#  region=os.getenv("AWS_DEFAULT_REGION")
-#)
+cognito_jwt_token = CognitoJwtToken(
+  user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"), 
+  user_pool_client_id=os.getenv("AWS_COGNITO_USER_POOL_CLIENT_ID"),
+  region=os.getenv("AWS_DEFAULT_REGION")
+)
 
 # X-RAY ----------
 #XRayMiddleware(app, xray_recorder)
@@ -105,7 +105,7 @@ cors = CORS(
 
 # Rollbar ----------
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
-#@app.before_first_request
+@app.before_first_request
 def init_rollbar():
     """init rollbar module"""
     rollbar.init(
