@@ -19,7 +19,7 @@ services:
       ROLLBAR_ACCESS_TOKEN: "${ROLLBAR_ACCESS_TOKEN}"
       AWS_COGNITO_USER_POOL_ID: "us-east-1_gi9GlC601"
       AWS_COGNITO_USER_POOL_CLIENT_ID: "38i6p484383c1ha1kbbgk22j1q"
-      AWS_ENDPOINT_URL: "http://dynamodb-local:8000"    
+      #AWS_ENDPOINT_URL: "http://dynamodb-local:8000"    
     build: ./backend-flask
     ports:
       - "4567:4567"
